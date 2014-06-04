@@ -1,0 +1,55 @@
+{
+  "id": "hotel_search",
+  "title": "Hotel",
+  "url": "hs",
+  "params": [
+    {
+      "name": "t",
+      "default": "2",
+      "description": "Number of travelers",
+      "type": "integer"
+    },
+    {
+      "name": "hr",
+      "default": "1",
+      "description": "Number of rooms",
+      "type": "integer"
+    },
+    {
+      "name": "hd1",
+      "default": "2013-05-01",
+      "description": "Check-in date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "hd2",
+      "default": "2013-05-05",
+      "description": "Check-out date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "hc1",
+      "default": "San Bruno",
+      "description": "City",
+      "type": "string"
+    },
+    {
+      "name": "hs1",
+      "default": "CA",
+      "description": "State (two-letter postal code)",
+      "type": "string (CA, TX, NY)"
+    },
+    {
+      "name": "hn1",
+      "default": "US",
+      "description": "Country (two-letter code)",
+      "type": "string (EU, US, FR)"
+    },
+    {
+      "name": "ha1",
+      "default": "SFO",
+      "description": "Nearest airport IATA 3 letter code to the search location",
+      "type": "string (LAX, DFW, LGA)"
+    }
+  ]
+}

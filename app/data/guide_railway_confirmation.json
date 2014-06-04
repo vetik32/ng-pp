@@ -1,0 +1,139 @@
+{
+  "id": "railway_confirmation",
+  "title": "Railway",
+  "url": "tc",
+  "params": [
+    {
+      "name": "td1",
+      "default": "2014-01-01",
+      "description": "Departure date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "td2",
+      "default": "2014-01-02",
+      "description": "Return date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "ts1",
+      "default": "LHR",
+      "description": "Origin station code - 3 letter IATA",
+      "type": "string (LHR,CDG,MUC)"
+    },
+    {
+      "name": "ts2",
+      "default": "MUC",
+      "description": "Destination station code - 3 letter IATA",
+      "type": "string (LHR,CDG,MUC)"
+    },
+    {
+      "name": "tr1",
+      "default": "GBLON",
+      "description": "Origination Resarail",
+      "type": "string"
+    },
+    {
+      "name": "tr2",
+      "default": "DEKOH",
+      "description": "Destination Resarail",
+      "type": "string"
+    },
+    {
+      "name": "toc",
+      "default": "London",
+      "description": "Origin city",
+      "type": "string"
+    },
+    {
+      "name": "tos",
+      "default": "",
+      "description": "Origin state",
+      "type": "string"
+    },
+    {
+      "name": "ton",
+      "default": "UK",
+      "description": "Origin country",
+      "type": "string (2 letter ISO country code)"
+    },
+    {
+      "name": "tdc",
+      "default": "Cologne",
+      "description": "Destination city",
+      "type": "string"
+    },
+    {
+      "name": "tds",
+      "default": "",
+      "description": "Destination state",
+      "type": "string"
+    },
+    {
+      "name": "tdn",
+      "default": "DE",
+      "description": "Destination country",
+      "type": "string (2 letter ISO country code)"
+    },
+    {
+      "name": "t",
+      "default": "2",
+      "description": "Number of travelers",
+      "type": "integer"
+    },
+    {
+      "name": "ta",
+      "default": "2",
+      "description": "Number of adult travelers in party",
+      "type": "integer"
+    },
+    {
+      "name": "tc",
+      "default": "coach",
+      "description": "Service class",
+      "type": "string or integer"
+    },
+    {
+      "name": "tpt",
+      "default": "Britain",
+      "description": "Pass type",
+      "type": "string  (Austria, Belgium, Britain, Bulgaria, Croatia, Czech Republic, Denmark, England, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Luxembourg, Macedonia, Montenegro, Netherlands, Northern Ireland, Norway, Poland, Portugal, Romania, Scotland, Slovak, Slovenia, Spain, Sweden, Switzerland, Turkey, Wales, Select, Global)"
+    },
+    {
+      "name": "g",
+      "default": 0,
+      "description": "Gender",
+      "type": "0 for male, 1 for female"
+    },
+    {
+      "name": "n",
+      "default": "Frans",
+      "description": "First name",
+      "type": "string"
+    },
+    {
+      "name": "tl",
+      "default": "123456",
+      "description": "Hash of Loyalty ID",
+      "type": "string"
+    },
+    {
+      "name": "tll",
+      "default": "Silver",
+      "description": "Loyalty level",
+      "type": "string"
+    },
+    {
+      "name": "tp",
+      "default": 125,
+      "description": "Purchase price",
+      "type": "integer"
+    },
+    {
+      "name": "c",
+      "default": "United Kingdom",
+      "description": "Country of residence",
+      "type": "string"
+    }
+  ]
+}

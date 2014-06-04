@@ -1,0 +1,10 @@
+<table class="table">
+  <thead>
+  <th ng-repeat="head in headers">{{head}}</th>
+  </thead>
+  <tbody>
+  <tr ng-repeat="entry in data" ng-class-odd="'odd'">
+    <td ng-repeat="name in fields">{{entry[name]}}</td>
+  </tr>
+  </tbody>
+</table>

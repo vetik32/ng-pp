@@ -1,0 +1,91 @@
+{
+  "id": "flight_hotel_rental_car_search",
+  "title": "Flight + Hotel + Rental Car",
+  "url": "fs",
+  "params": [
+    {
+      "name": "fa1",
+      "default": "SFO",
+      "description": "Origin airport IATA 3 letter code",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "fa2",
+      "default": "JFK",
+      "description": "Destination airport IATA 3 letter code",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "fd1",
+      "default": "2013-05-01",
+      "description": "Departure date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "fd2",
+      "default": "2013-05-05",
+      "description": "Return date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "t",
+      "default": "1",
+      "description": "Number of travelers",
+      "type": "integer"
+    },
+    {
+      "name": "fc",
+      "default": "first",
+      "description": "Service class",
+      "type": "string or integer"
+    },
+    {
+      "name": "hr",
+      "default": "1",
+      "description": "Number of rooms",
+      "type": "integer"
+    },
+    {
+      "name": "ra1",
+      "default": "SFO",
+      "description": "The nearest airport IATA 3 letter code to the pick-up location",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "rc1",
+      "default": "San Bruno",
+      "description": "The city of the pick-up location",
+      "type": "string"
+    },
+    {
+      "name": "rd1",
+      "default": "2013-05-01",
+      "description": "The date the traveler wants to pick up the car",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "ra2",
+      "default": "SFO",
+      "description": "The nearest airport IATA 3 letter code to the drop-off location",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "rc2",
+      "default": "San Francisco",
+      "description": "The city of the drop-off location",
+      "type": "string"
+    },
+    {
+      "name": "rd2",
+      "default": "2013-05-05",
+      "description": "The date the traveler wants to drop off the car",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "rc",
+      "default": "2",
+      "description": "Class of car, i.e. subcompact = 1, compact = 2, etc.",
+      "type": "string"
+    }
+  ]
+}

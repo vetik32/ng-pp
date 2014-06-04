@@ -1,0 +1,20 @@
+1. define a domain (interval)
+
+e.g.  value domain
+data with [10,30,50,99] has [0,99]
+
+var myData = [{x:10},{x:30},{x:99}];
+
+var interval = function(flattenData, fieldAccessorFn) {
+    return d3.extent(flattenData, fieldAccessorFn);
+};
+
+var xAccessor = function(d) {
+    return d['x']
+}
+
+xDomain = interval(myData, xAccessor) //[10,99]
+
+2. scale
+
+xScale = d3.scale.linear().range([margin,width-margin]).domain(xDomain)

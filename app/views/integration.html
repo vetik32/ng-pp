@@ -1,0 +1,80 @@
+<div ng-controller="IntegrationsGuideCtrl">
+
+  <div class="row">
+    <div class="offset1">
+      <ul class="nav inline subNavigation">
+        <li ng-repeat="item in subNavigation"><a href="#{{item.url}}"
+          ng-class="{true :'active'}[item.active]">{{item.display}} <span class="divider" ng-show="!$last">&nbsp;/</span></a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="headerRow margin-b-4">
+      <div class="sj-row">
+      <h3>Integration Guide</h3>
+    </div>
+  </div>
+
+  <div class="sj-row margin-b-3">
+    <div class="sj-col sj-col-250 ">&nbsp;</div>
+    <div class="sj-col sj-col-710">
+      <h2 class="title1" cg-busy="'integrationGuide'">{{pageTitle}}</h2>
+    </div>
+  </div>
+
+  <div class="sj-row">
+    <div class="sj-col sj-col-250">
+      <div class="toggleMenu">
+        <div ng-model="menu" btn-radio="'tag_format'" class="menuItem" ng-click="loadSubPage('tag_format')">
+         Tag Format
+        </div>
+        <div class="submenu">
+          <div>
+            <span class="menuItem" ng-model="menu" btn-radio="'search'" ng-click="loadSubPage('search', 'flight_search')"><i class="icon-arrow"></i>Search</span>
+          </div>
+          <div ng-show="menu == 'search'" class="submenu-body">
+            <ul class="unstyled">
+              <li ng-class="{'active': currentGuideId == 'flight_search'}"><span ng-click="loadGuide('flight_search')">Flight</span></li>
+              <li ng-class="{'active': currentGuideId == 'flight_hotel_search'}"><span ng-click="loadGuide('flight_hotel_search')">Flight + Hotel</span></li>
+              <li ng-class="{'active': currentGuideId == 'flight_rental_car_search'}"><span ng-click="loadGuide('flight_rental_car_search')">Flight + Rental Car</span></li>
+              <li ng-class="{'active': currentGuideId == 'flight_hotel_rental_car_search'}"><span ng-click="loadGuide('flight_hotel_rental_car_search')">Flight + Hotel + Rental Car</span></li>
+              <li ng-class="{'active': currentGuideId == 'hotel_search'}"><span ng-click="loadGuide('hotel_search')">Hotel</span></li>
+              <li ng-class="{'active': currentGuideId == 'hotel_rental_car_search'}"><span ng-click="loadGuide('hotel_rental_car_search')">Hotel + Rental Car</span></li>
+              <li ng-class="{'active': currentGuideId == 'rental_car_search'}"><span ng-click="loadGuide('rental_car_search')">Rental Car</span></li>
+              <li ng-class="{'active': currentGuideId == 'railway_search'}"><span ng-click="loadGuide('railway_search')">Railway</span></li>
+              <li ng-class="{'active': currentGuideId == 'vacation_search'}"><span ng-click="loadGuide('vacation_search')">Vacation</span></li>
+              <li ng-class="{'active': currentGuideId == 'cruise_search'}"><span ng-click="loadGuide('cruise_search')">Cruise</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="submenu">
+          <div>
+            <span class="menuItem" ng-model="menu" btn-radio="'confirmation'" ng-click="loadSubPage('confirmation', 'flight_confirmation')"><i class="icon-arrow"></i>Confirmation</span>
+          </div>
+          <div ng-show="menu == 'confirmation'" class="submenu-body">
+            <ul class="unstyled">
+              <li ng-class="{'active': currentGuideId == 'flight_confirmation'}"><span ng-click="loadGuide('flight_confirmation')">Flight</span></li>
+              <li ng-class="{'active': currentGuideId == 'flight_hotel_confirmation'}"><span ng-click="loadGuide('flight_hotel_confirmation')">Flight + Hotel</span></li>
+              <li ng-class="{'active': currentGuideId == 'flight_rental_car_confirmation'}"><span ng-click="loadGuide('flight_rental_car_confirmation')">Flight + Rental Car</span></li>
+              <li ng-class="{'active': currentGuideId == 'flight_hotel_rental_car_confirmation'}"><span ng-click="loadGuide('flight_hotel_rental_car_confirmation')">Flight + Hotel + Rental Car</span></li>
+              <li ng-class="{'active': currentGuideId == 'hotel_confirmation'}"><span ng-click="loadGuide('hotel_confirmation')">Hotel</span></li>
+              <li ng-class="{'active': currentGuideId == 'hotel_rental_car_confirmation'}"><span ng-click="loadGuide('hotel_rental_car_confirmation')">Hotel + Rental Car</span></li>
+              <li ng-class="{'active': currentGuideId == 'rental_car_confirmation'}"><span ng-click="loadGuide('rental_car_confirmation')">Rental Car</span></li>
+              <li ng-class="{'active': currentGuideId == 'railway_confirmation'}"><span ng-click="loadGuide('railway_confirmation')">Railway</span></li>
+              <li ng-class="{'active': currentGuideId == 'vacation_confirmation'}"><span ng-click="loadGuide('vacation_confirmation')">Vacation</span></li>
+              <li ng-class="{'active': currentGuideId == 'cruise_confirmation'}"><span ng-click="loadGuide('cruise_confirmation')">Cruise</span></li>
+            </ul>
+          </div>
+        </div>
+        <div ng-model="menu" btn-radio="'homepage'" class="menuItem" ng-click="loadSubPage('homepage')">
+         Homepage
+        </div>
+        <div ng-model="menu" btn-radio="'boarding_pass'" class="menuItem" ng-click="loadSubPage('boarding_pass')">
+         Boarding Pass
+        </div>
+      </div>
+    </div>
+    <div class="sj-col sj-col-710">
+      <div ng-include="integration.url"></div>
+    </div>
+  </div>
+</div>

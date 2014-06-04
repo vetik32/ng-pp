@@ -1,0 +1,11 @@
+node_modules
+dist
+.tmp
+.sass-cache
+.idea
+app/components
+libpeerconnection.log
+app/styles/main.css
+app/styles/_*.css
+selenium
+coverage

@@ -1,0 +1,21 @@
+$list: margin padding;
+
+@for $i from 1 through 5 {
+  @each $rule in $list {
+    .#{$rule}-t-#{$i} {
+      #{$rule}-top: ($i) * 10px;
+    }
+
+    .#{$rule}-r-#{$i} {
+      #{$rule}-right: ($i) * 10px;
+    }
+
+    .#{$rule}-b-#{$i} {
+      #{$rule}-bottom: ($i) * 10px;
+    }
+
+    .#{$rule}-l-#{$i} {
+      #{$rule}-left: ($i) * 10px;
+    }
+  }
+}

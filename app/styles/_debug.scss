@@ -1,0 +1,14 @@
+// debug
+
+.show-grid [class*="span"] {
+  background-color: #eee;
+}
+.show-grid [class*="span"]:hover {
+  background-color: #ddd;
+}
+.show-grid [class*="span"] [class*="span"] {
+  background-color: #ccc;
+}
+.show-grid [class*="span"] [class*="span"] [class*="span"] {
+  background-color: #999;
+}

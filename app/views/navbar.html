@@ -1,0 +1,17 @@
+<div class="navbar navbar-static-top" ng-controller="UserCtrl">
+  <div class="navbar-inner">
+    <div class="sj-row">
+      <div class="text-right greeting-area">
+        <span class="margin-r-3 welcome">Hi, {{getPartnerName()}}</span>
+        <a href="" ng-click="logout()">Log Out</a>
+      </div>
+    </div>
+    <div class="sj-row">
+      <div class="logoPlaceholder"></div>
+      <ul class="nav">
+        <li ng-repeat="item in navigation"><a ui-sref="{{item.url}}"
+          ui-sref-active="active">{{item.display}}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+[
+  {
+    "advertiser": "A",
+    "impression": 500000
+  },
+  {
+    "advertiser": "B",
+    "impression": 300000
+  },
+  {
+    "advertiser": "C",
+    "impression": 200000
+  },
+  {
+    "advertiser": "D",
+    "impression": 100000
+  },
+  {
+    "advertiser": "E",
+    "impression": 50000
+  },
+  {
+    "advertiser": "F",
+    "impression": 25000
+  },
+  {
+    "advertiser": "G",
+    "impression": 10000
+  }
+]

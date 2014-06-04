@@ -1,0 +1,79 @@
+{
+  "id": "flight_confirmation",
+  "title": "Flight purchase confirmation",
+  "url": "fc",
+  "params": [
+    {
+      "name": "fa1",
+      "default": "SFO",
+      "description": "Origin airport code",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "fa2",
+      "default": "JFK",
+      "description": "Destination airport code",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "fd1",
+      "default": "2013-05-01",
+      "description": "Departure date",
+      "type": "data (yyyy-mm-dd)"
+    },
+    {
+      "name": "fd2",
+      "default": "2013-06-01",
+      "description": "Return date",
+      "type": "data (yyyy-mm-dd)"
+    },
+    {
+      "name": "t",
+      "default": "1",
+      "description": "Number of travelers",
+      "type": "integer"
+    },
+    {
+      "name": "fc",
+      "default": "first",
+      "description": "Service class",
+      "type": "string or integer"
+    },
+    {
+      "name": "fp",
+      "default": "455",
+      "description": "Purchase price, with cents dropped, and no '$'. For example, pass $455.79 as 455",
+      "type": "integer"
+    },
+    {
+      "name": "g",
+      "default": "0",
+      "description": "Customer's gender - 0 for male, 1 for female.",
+      "type": "integer"
+    },
+    {
+      "name": "n",
+      "default": "John",
+      "description": "Customer's first name",
+      "type": "string"
+    },
+    {
+      "name": "fl",
+      "default": "abcdefg",
+      "description": "Hash of frequent flyer number",
+      "type": "string or integer"
+    },
+    {
+      "name": "ffl",
+      "default": "platinum",
+      "description": "Frequent flyer level (e.g. platinum)",
+      "type": "string"
+    },
+    {
+      "name": "ffc",
+      "default": "xyzabc",
+      "description": "Fare code",
+      "type": "string or integer"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<div ng-controller="PartnerCtrl">
+  <alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
+  <div class="headerRow">
+    <div class="sj-row">
+      <h3>Current Partner: {{getPartnerName()}}</h3>
+    </div>
+  </div>
+
+  <div class="sj-row">
+    <h4>
+      Select a Partner below
+    </h4>
+  </div>
+  <hr/>
+  <div class="sj-row">
+    <ul class="nav nav-tabs nav-stacked pull-left">
+      <li ng-repeat="partner in partners">
+        <a href="" ng-click="updatePartner(partner.id)">{{partner.name}} - {{partner.data_key}}</a>
+      </li>
+    </ul>
+  </div>
+  <hr/>
+  <div class="headerRow">
+    <div class="sj-row">
+      <h3>Create Partner</h3>
+    </div>
+  </div>
+  <div class="sj-row">
+    <div class="margin-t-2">
+      <form ng-submit="createPartner()">
+        <div>
+          <input class="input login username" type="text" placeholder="partner" ng-model="newpartner.partner.name"/>
+        </div>
+        <div>
+          <input class="input login password" type="password" placeholder="password" ng-model="newpartner.partner.password"/>
+        </div>
+        <div>
+          <input class="input login password" type="password" placeholder="confirm password" ng-model="newpartner.partner.password_confirmation"/>
+        </div>
+        <div class="margin-t-2">
+          <input class="login submit btn btn-primary" type="submit" value="Create"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

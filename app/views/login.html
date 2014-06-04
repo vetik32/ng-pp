@@ -1,0 +1,22 @@
+<div class="loginBackground" ng-controller="LoginCtrl">
+  <div class="block">
+    <div class="centered">
+      <div class="logo"></div>
+      <h3>ZZZ Client Log in</h3>
+      <hr/>
+      <form ng-submit="login()">
+        <p class="error-message" ng-show="hasErrorMessage()">{{message}}</p>
+        <div>
+          <input class="input login username" type="text" placeholder="partner" ng-model="partner.name"/>
+        </div>
+        <div>
+          <input class="input login password" type="password" placeholder="password" ng-model="partner.password"/>
+        </div>
+        <div>
+          <input class="margin-t-2 login submit" type="submit" value="Log In"/>
+        </div>
+        <a href="#">Forgot password</a>
+      </form>
+    </div>
+  </div>
+</div>

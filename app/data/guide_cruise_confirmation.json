@@ -1,0 +1,67 @@
+{
+  "id": "cruise_confirmation",
+  "title": "Cruise",
+  "url": "cc",
+  "params": [
+    {
+      "name": "cco",
+      "default": "Carnival",
+      "description": "Name of the cruise line",
+      "type": "string"
+    },
+    {
+      "name": "cd1",
+      "default": "2013-05-01",
+      "description": "Departure date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "cd",
+      "default": "5",
+      "description": "Length of cruise in nights",
+      "type": "string"
+    },
+    {
+      "name": "cf1",
+      "default": "Caribbean",
+      "description": "Destination of cruise",
+      "type": "string"
+    },
+    {
+      "name": "s",
+      "default": "CA",
+      "description": "Customer's state of residence (two-letter postal code)",
+      "type": "string (CA, TX, NY)"
+    },
+    {
+      "name": "t",
+      "default": "2",
+      "description": "Number of travelers",
+      "type": "integer"
+    },
+    {
+      "name": "cr",
+      "default": "1",
+      "description": "Number of rooms",
+      "type": "integer"
+    },
+    {
+      "name": "cp",
+      "default": "455",
+      "description": "Purchase price, with cents dropped, and no '$'. For example, pass $455.79 as 455",
+      "type": "integer"
+    },
+    {
+      "name": "g",
+      "default": "1",
+      "description": "Customer's gender - 0 for male, 1 for female.",
+      "type": "integer"
+    },
+    {
+      "name": "n",
+      "default": "Steve",
+      "description": "Customer's first name",
+      "type": "string"
+    }
+  ]
+}

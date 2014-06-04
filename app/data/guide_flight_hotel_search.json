@@ -1,0 +1,49 @@
+{
+  "id": "flight_hotel_search",
+  "title": "Flight + Hotel",
+  "url": "fs",
+  "params": [
+    {
+      "name": "fa1",
+      "default": "SFO",
+      "description": "Origin airport IATA 3 letter code",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "fa2",
+      "default": "JFK",
+      "description": "Destination airport IATA 3 letter code",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "fd1",
+      "default": "2013-05-01",
+      "description": "Departure date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "fd2",
+      "default": "2013-05-05",
+      "description": "Return date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "t",
+      "default": "1",
+      "description": "Number of travelers",
+      "type": "integer"
+    },
+    {
+      "name": "fc",
+      "default": "first",
+      "description": "Service class",
+      "type": "string or integer"
+    },
+    {
+      "name": "hr",
+      "default": "1",
+      "description": "Number of rooms",
+      "type": "integer"
+    }
+  ]
+}

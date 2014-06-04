@@ -1,0 +1,27 @@
+{
+  "id": "tag_format",
+  "title": "Format of the ZZZ script tag",
+  "url": "fs?key1=value1&key2=value2&...",
+  "params": [
+    {
+      "name": "script type=\"text/javascript\" language=\"javascript\"",
+      "description": "Indicates that the ZZZ script URL contains JavaScript."
+    },
+    {
+      "name": "https://pixel.ZZZ.com/partner/",
+      "description": "The address of the ZZZ tag server. ZZZ's scripts are secure, so the protocol must be https, not http."
+    },
+    {
+      "name": "{{partner.name}}",
+      "description": "Your ZZZ partner key is {{partner.name}} - it must be included in the request URL as shown."
+    },
+    {
+      "name": "fs",
+      "description": "Indicates the type of action being recorded. See below for the available types."
+    },
+    {
+      "name": "key1=value1&key2=value2&...",
+      "description": "The rest of the key/value pairs are specific to the type of action being recorded. You are responsible for inserting the values based on the user's actions. See below for the available keys for each action."
+    }
+  ]
+}

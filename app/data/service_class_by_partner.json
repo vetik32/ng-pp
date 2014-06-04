@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "total_events": 1818782,
+    "end-time": "2013-06-02T00:00:00+00:00",
+    "start-time": "2013-04-01T00:00:00+00:00",
+    "filters": [
+      {
+        "partner__name__icontains": "hipmunk"
+      }
+    ],
+    "offset": 0,
+    "previous": null,
+    "total_results": 5,
+    "self": "/api/reports/?start-time=2013-04-01T00:00Z&end-time=2013-06-02T00:00Z&dimension=service_class&partner__name__icontains=hipmunk",
+    "next": null,
+    "limit": 20,
+    "dimension": "service_class"
+  },
+  "results": [
+    {
+      "count": 1772411,
+      "value": "Coach"
+    },
+    {
+      "count": 36535,
+      "value": "Business"
+    },
+    {
+      "count": 9780,
+      "value": "First"
+    },
+    {
+      "count": 55,
+      "value": "Air Taxi"
+    },
+    {
+      "count": 1,
+      "value": "c"
+    }
+  ]
+}

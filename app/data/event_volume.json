@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "total_events": 10045,
+    "endtime": "20130402T00:00:00+00:00",
+    "starttime": "20130301T00:00:00+00:00",
+    "filters": [
+      {
+        "partner__name": "Tingo"
+      },
+      {
+        "is_partner_event": "True"
+      }
+    ],
+    "offset": 0,
+    "previous": null,
+    "total_results": 1,
+    "self": "/api/reports/airport/?starttime=20130301T00:00Z&endtime=20130402T00:00Z&dimension=event_type&is_partner_event=True&partner__name=Tingo",
+    "next": null,
+    "limit": 20,
+    "dimension": "event_type"
+  },
+  "results": [
+    {
+      "count": 7037,
+      "value": "HOTEL_SEARCH"
+    },
+    {
+      "count": 3008,
+      "value": "FLIGHT_SEARCH"
+    }
+  ]
+}

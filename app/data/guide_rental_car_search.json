@@ -1,0 +1,55 @@
+{
+  "id": "rental_car_search",
+  "title": "Rental Car",
+  "url": "rs",
+  "params": [
+    {
+      "name": "ra1",
+      "default": "SFO",
+      "description": "The nearest airport IATA 3 letter code to the pick-up location",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "rc1",
+      "default": "San Francisco",
+      "description": "The city of the pick-up location",
+      "type": "string"
+    },
+    {
+      "name": "rd1",
+      "default": "2013-05-01",
+      "description": "The date the traveler wants to pick up the car",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "ra2",
+      "default": "SFO",
+      "description": "The nearest airport IATA 3 letter code to the drop-off location",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "rc2",
+      "default": "San Francisco",
+      "description": "The city of the drop-off location",
+      "type": "string"
+    },
+    {
+      "name": "rd2",
+      "default": "2013-05-05",
+      "description": "The date the traveler wants to drop off the car",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "rc",
+      "default": "2",
+      "description": "Class of car, i.e. subcompact = 1, compact = 2, etc.",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "default": "2",
+      "description": "Number of travelers",
+      "type": "integer"
+    }
+  ]
+}

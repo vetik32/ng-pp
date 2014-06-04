@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "total_events": 3041,
+    "endtime": "20130402T00:00:00+00:00",
+    "starttime": "20130301T00:00:00+00:00",
+    "filters": [],
+    "offset": 0,
+    "previous": null,
+    "total_results": 618,
+    "self": "/api/reports/?starttime=20130301T00:00Z&endtime=20130402T00:00Z&dimension=destination_airport__name&limit=3",
+    "next": "/api/reports/?starttime=20130301T00%3A00Z&endtime=20130402T00%3A00Z&limit=3&dimension=destination_airport__name&offset=3",
+    "limit": 3,
+    "dimension": "destination_airport__name"
+  },
+  "results": [
+    {
+      "count": 176,
+      "value": "Los Angeles Intl"
+    },
+    {
+      "count": 114,
+      "value": "Orlando Intl"
+    },
+    {
+      "count": 92,
+      "value": "Mc Carran Intl"
+    }
+  ]
+}

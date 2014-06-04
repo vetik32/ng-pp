@@ -1,0 +1,91 @@
+{
+  "id": "hotel_confirmation",
+  "title": "Hotel",
+  "url": "hc",
+  "params": [
+    {
+      "name": "t",
+      "default": "2",
+      "description": "Number of travelers",
+      "type": "integer"
+    },
+    {
+      "name": "hr",
+      "default": "1",
+      "description": "Number of rooms",
+      "type": "integer"
+    },
+    {
+      "name": "hd1",
+      "default": "2013-05-01",
+      "description": "Check-in date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "hd2",
+      "default": "2013-05-05",
+      "description": "Check-out date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "hc1",
+      "default": "San Bruno",
+      "description": "City",
+      "type": "string"
+    },
+    {
+      "name": "hs1",
+      "default": "CA",
+      "description": "State (two-letter postal code)",
+      "type": "string (CA, TX, NY)"
+    },
+    {
+      "name": "hn1",
+      "default": "US",
+      "description": "Country (two-letter code)",
+      "type": "string (EU, US, FR)"
+    },
+    {
+      "name": "ha1",
+      "default": "SFO",
+      "description": "Nearest airport IATA 3 letter code to the search location",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "hz1",
+      "default": "55555",
+      "description": "5-digit postal code of the hotel",
+      "type": "integer"
+    },
+    {
+      "name": "hp",
+      "default": "455",
+      "description": "Purchase price, with cents dropped, and no '$'. For example, pass $455.79 as 455",
+      "type": "integer"
+    },
+    {
+      "name": "g",
+      "default": "0",
+      "description": "Customer's gender - 0 for male, 1 for female.",
+      "type": "integer"
+    },
+    {
+      "name": "n",
+      "default": "Steve",
+      "description": "Customer's first name",
+      "type": "string"
+    },
+    {
+      "name": "hl",
+      "default": "123asdf",
+      "description": "Hash of customer loyalty program number",
+      "type": "string"
+    },
+    {
+      "name": "hc",
+      "default": "Single Queen",
+      "description": "Room type",
+      "type": "string"
+    }
+  ]
+}

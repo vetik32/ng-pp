@@ -1,0 +1,60 @@
+$navItemMargin: 42px;
+$orangeColor: #f37321;
+$blueColor: #00b0ed;
+$grayShade_63: #636363;
+$grayShade_a9: #a9a9a9;
+
+.welcome {
+  color: $blueColor;
+}
+
+.logoPlaceholder {
+  display: inline-block;
+  margin-right: 75px;
+  background-image: url('images/ZZZ Logo_Tagline_M.png');
+  width: 252px;
+  height: 71px;
+}
+
+.navbar {
+  .navbar-inner {
+    padding: 0;
+    border: none;
+    margin-bottom: 20px;
+    background: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  .nav {
+    margin: 0 0 1rem 0;
+    display: inline-block;
+    float: none;
+
+    li {
+
+      a {
+        font-weight: bold;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        margin-right: $navItemMargin;
+        text-transform: uppercase;
+
+        &.active {
+          color: $orangeColor;
+        }
+      }
+    }
+
+    //li:first-child,
+    li:last-child {
+
+      a {
+        padding-right: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}

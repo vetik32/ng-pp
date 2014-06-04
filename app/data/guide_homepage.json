@@ -1,0 +1,13 @@
+{
+  "id": "homepage",
+  "title": "Homepage",
+  "url": "hp",
+  "params": [
+    {
+      "name": "n",
+      "default": "rewards-home-page",
+      "description": "Page type identifier",
+      "type": "string"
+    }
+  ]
+}

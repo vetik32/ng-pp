@@ -1,0 +1,43 @@
+{
+  "id": "vacation_search",
+  "title": "Vacation",
+  "url": "vs",
+  "params": [
+    {
+      "name": "va1",
+      "default": "SFO",
+      "description": "Origin airport IATA 3 letter code",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "va2",
+      "default": "JFK",
+      "description": "Destination airport IATA 3 letter code",
+      "type": "string (LAX, DFW, LGA)"
+    },
+    {
+      "name": "vd1",
+      "default": "2013-05-01",
+      "description": "Departure date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "vd2",
+      "default": "2013-05-05",
+      "description": "Return date",
+      "type": "date (yyyy-mm-dd)"
+    },
+    {
+      "name": "t",
+      "default": "2",
+      "description": "Number of travelers",
+      "type": "integer"
+    },
+    {
+      "name": "vc",
+      "default": "first",
+      "description": "Service class",
+      "type": "string or integer"
+    }
+  ]
+}

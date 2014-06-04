@@ -1,0 +1,91 @@
+<div ng-controller="HomeCtrl">
+  <div class="alert alert-error" ng-show="errorMessage" >
+    <button type="button" class="close" ng-click="hideErrors()">&times;</button>
+    <div ng-bind="errorMessage"></div>
+  </div>
+  <div class="headerRow">
+    <div class="sj-row">
+      <h3>{{getPartnerName()}}</h3>
+    </div>
+  </div>
+  <div ng-controller="ReportsCtrl">
+    <div modal="showDatepicker" options="opts"></div>
+    <div class="margin-t-2 client-data">
+      <div class="margin-b-2">
+        <table class="center -with-{{listOfItem.length}}-cols">
+          <td ng-repeat="item in listOfItem" class="dataItem">
+            <div class="title">{{item.name}}</div>
+            <div class="num" cg-busy="'eventVolumeReport{{item.dimension}}'">{{item.value | number}}</div>
+          </td>
+        </table>
+      </div>
+    </div>
+    <section class="dataSection">
+      <h2 class="text-center section-header">Event Volume</h2>
+
+      <div class="sj-row">
+        <div class="float-right graphType-block">
+          <select ng-model="type" ng-options="key as value for (key,value) in graphTypes" class="graphType pull-right" ng-change="switchChartType()"></select>
+          <label class="checkbox inline pull-right margin-r-1" ng-visible="type == 'bar'"><input type="checkbox" ng-model="grouped"  ng-change="rememberGroupState()"/> Grouped</label>
+        </div>
+        <div class="float-right">
+          <div class="controls">
+            <ul class="inline">
+              <li ng-repeat="date in dates"><label class="radio"><input type="radio" ng-model="$parent.dateRange" value="{{date.value}}"
+                ng-click="openSelectDateRangeDialog(date.value)" name="range" />{{date.label}}</label></li>
+            </ul>
+          </div>
+          <div ng-show="dateRange == -1" class="text-center text-orange"><span>{{reportFilter.from | sjDate}}</span> -
+            <span>{{reportFilter.to | sjDate}}</span></div>
+        </div>
+      </div>
+      <div class="sj-row" cg-busy="'eventVolumeChart'">
+        <div id="eventVolumeChart" sj-chart val="eventVolume" type="type" grouped="grouped" emptyText="No data for the selected time frame."></div>
+      </div>
+    </section>
+    <section class="margin-t-4">
+      <div class="sj-row">
+        <h3 class="section-header text-center">Traveler Booking Behavior</h3>
+
+        <div class="sj-col sj-col-480 sj-col-left">
+          <div class="sj-col-content-body">
+            <h4 class="sub-section-header -with-icon">
+              <i class="icon-arrow"></i>Service Class
+            </h4>
+
+            <div cg-busy="'flightServiceClass'" sj-pie-chart val="flightServiceClass" emptyText="No data." limit="5"></div>
+            <hr class="delimiter"/>
+            <h4 class="sub-section-header -with-icon">
+              <i class="icon-arrow"></i>Trip Duration (in nights)
+            </h4>
+
+            <div cg-busy="'tripDuration'" sj-pie-chart val="tripDuration" emptyText="No data."></div>
+          </div>
+        </div>
+        <div class="sj-col sj-col-480 sj-col-right">
+          <div class="sj-col-content">
+            <div class="sj-col-content-body">
+              <h4 class="sub-section-header -with-icon">
+                <i class="icon-arrow"></i>Top Originations
+              </h4>
+
+              <div cg-busy="'topOriginations'" sj-grid="topOriginations" headers="Origination,Count" fields="value,count|number" limit="5"></div>
+              <hr class="delimiter"/>
+              <h4 class="sub-section-header -with-icon">
+                <i class="icon-arrow"></i>Top Destinations
+              </h4>
+
+              <div cg-busy="'topDestinations'" sj-grid="topDestinations" headers="Destination,Count" fields="value,count|number" limit="5"></div>
+              <hr class="delimiter"/>
+              <h4 class="sub-section-header -with-icon">
+                <i class="icon-arrow"></i>Book to Travel Window
+              </h4>
+
+              <div cg-busy="'bookingLength'" sj-grid="bookingLength" headers="Days Out,Count" fields="value,count|number"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

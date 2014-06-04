@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "total_events": 3328,
+    "endtime": "20130401T00:00:00+00:00",
+    "starttime": "20130301T00:00:00+00:00",
+    "filters": [
+      {
+        "partner__name": "Tingo"
+      },
+      {
+        "event_type": "unique_profiles"
+      }
+    ],
+    "offset": 0,
+    "previous": null,
+    "total_results": 0,
+    "self": "/api/reports/?starttime=20130301T00:00Z&endtime=20130401T00:00Z&dimension=partner&event_type=unique_profiles&partner__name=Tingo",
+    "next": null,
+    "limit": 20,
+    "dimension": "partner"
+  },
+  "results": [
+    {
+      "count": 3328,
+      "value": "Tingo"
+    }
+  ]
+}
